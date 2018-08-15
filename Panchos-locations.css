@@ -74,7 +74,7 @@ h1 {
 .container {
 	display: grid;
 	background-color: #f5e3c6;
-	margin: 60vh 10% 10% 10%;
+	margin: 50vh 10% 10% 10%;
 	grid-template-rows: 50% 50%;
 	grid-template-columns: 50% 50%;
 	grid-gap: 10px;
