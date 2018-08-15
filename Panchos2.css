@@ -1,0 +1,344 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding:0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background-image: url(unsplash-nachos.jpeg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: lato;
+}
+
+.main-nav {
+	height: 60px;
+	background-color: rgb(122, 84, 26, 0.5);
+	line-height: 60px;
+	padding-left: 0 16px;
+}
+
+.menu {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li.close {
+	display: none;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 10vw;
+	font-size: 2vw;
+}
+
+.menu li a {
+	 text-decoration: none;
+	 font-weight: bold;
+	 color: #f5e3c6;
+	 cursor: pointer;
+
+}
+
+.mobile-btn {
+	float: right;
+	display: none;
+	height: 60px;
+	width: 60px;
+	background-color: rgb(122, 84, 26, 0.5);
+	background-image: url(hamburger.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	cursor: pointer;
+}
+
+
+h1 {
+	display: block;
+	text-align: center;
+	color: #f5e3c6;
+	margin-top: 10%;
+	font-size: 6.5vw;
+	background-color: rgb(122, 84, 26, 0.5);
+}
+
+.container {
+	display: grid;
+	background-color: #f5e3c6;;
+	margin: 100vh 10% 10% 10%;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+	grid-gap: 10px;
+	margin-bottom: 60vh;
+}
+
+.welcome-para {
+	padding: 10px;
+	font-size: 3vw;
+	color: #7a541a;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+}
+
+.fajitas {
+	padding: 10px;
+	height: 38vh;
+	width: 38vw;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+
+.story-para {
+	padding: 10px;
+	font-size: 3vw;
+	color: #7a541a;;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+
+}
+
+.steak{
+	padding: 10px;
+	height: 38vh;
+	width: 38vw;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+}
+
+footer {
+	background-color: rgb(122, 84, 26, 0.7);
+	position: relative;
+	height: 200px;
+	margin-top: -200px;
+	clear: both;
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.ws a{
+	font-size: 2vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+
+.hp a {
+	font-size: 2vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+
+.hours {
+font-size: 2vw;
+	color: #f5e3c6;	
+}
+
+/*Mobile Starts Here*/
+
+@media (max-width: 768px) {
+	.menu {
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgb(122, 84, 26, 0.7);
+		z-index: 1000;
+		width: 300px;
+		transform: translateX(-300px);
+		transition: all 200ms ease-in-out;	
+
+	}
+
+	.menu.open {
+		transform: translateX(0);
+
+	}
+
+	.menu li {
+		display: block;
+		padding: 14px;
+		justify-content: center;
+
+	}
+
+	.menu li a {
+		color: #f5e3c6;
+		font-size: 6vw;
+	}
+
+	.menu li.close {
+	float: right;
+	display: none;
+	height: 60px;
+	width: 60px;
+	background-image: url(hamburger.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	cursor: pointer;
+	}
+
+
+	.overlay {
+		top: 0;
+		left: 0;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0);
+		opacity: 0;
+		z-index: -1;
+		transform: opacity 100ms linear;
+	}
+
+	.mobile-btn {
+	display: inline-block;
+	cursor: pointer;
+	}
+
+	.mobile-btn:hover {
+		opacity: 0.5;
+	}
+
+	.overlay.open{
+		z-index: 1;
+		opacity: 1;
+	}
+
+.main-nav {
+	height: 60px;
+	background-color: rgb(122, 84, 26, 0.0);
+	line-height: 60px;
+	padding-left: 0 16px;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	color: #f5e3c6;
+	margin-top: 10%;
+	font-size: 6.5vw;
+	background-color: rgb(122, 84, 26, 0.5);
+	transition: all 1700ms ease-in-out;
+}
+
+footer {
+	background-color: rgb(122, 84, 26, 0.7);
+	position: relative;
+	height: 200px;
+	margin-top: -200px;
+	clear: both;
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.ws a{
+	font-size: 3vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+
+.hp a{
+	font-size: 3vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+
+.hours {
+font-size: 3vw;
+	color: #f5e3c6;	
+}
+
+.welcome-para {
+	font-size: 4vw;
+
+}
+
+
+.story-para {
+	font-size: 4vw;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	background-color: #f5e3c6;
+	margin: 30vh 10% 30vh 10%;
+	grid-template-areas: 
+	"welcome"
+	"fajitas"
+	"story"
+	"steak";
+	grid-gap: 10px;
+	height: 200vh;
+	position: relative;
+}
+
+.welcome-para {
+	padding: 10px;
+	font-size: 5vw;
+	color: #7a541a;
+	width: 100%;
+	 grid-area: welcome;
+	 position: absolute;
+
+
+}
+
+.fajitas {
+	padding: 10px;
+	height: 38vh;
+	width: 100%;
+	grid-area: fajitas;
+	position: absolute;
+	
+}
+
+
+.story-para {
+	padding: 10px;
+	font-size: 5vw;
+	color: #7a541a;
+	grid-area: story;
+	position: absolute;
+
+
+}
+
+.steak{
+	padding: 10px;
+	height: 38vh;
+	width: 100%;
+	grid-area: steak;
+	position: absolute;
+
+}
+}
