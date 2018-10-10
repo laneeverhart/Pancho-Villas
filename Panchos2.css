@@ -20,7 +20,7 @@ body {
 	height: 60px;
 	background-color: rgb(122, 84, 26, 0.5);
 	line-height: 60px;
-	padding-left: 0 16px;
+	padding: 0 90px;
 }
 
 .menu {
@@ -116,7 +116,7 @@ h1 {
 }
 
 .steak{
-	padding: 10px;
+	margin: 60px 10px 0px 10px;
 	height: 38vh;
 	width: 38vw;
 	grid-row-start: 2;
@@ -144,11 +144,19 @@ footer {
 	color: #f5e3c6;
 	text-decoration: none;
 }
+.ws {
+	font-size: 2vw;
+	color: #f5e3c6;
+}
 
 .hp a {
 	font-size: 2vw;
 	color: #f5e3c6;
 	text-decoration: none;
+}
+.hp  {
+	font-size: 2vw;
+	color: #f5e3c6;
 }
 
 .hours {
@@ -218,7 +226,7 @@ font-size: 2vw;
 	.mobile-btn {
 	display: inline-block;
 	cursor: pointer;
-	}
+}
 
 	.mobile-btn:hover {
 		opacity: 0.5;
@@ -233,7 +241,7 @@ font-size: 2vw;
 	height: 60px;
 	background-color: rgb(122, 84, 26, 0.0);
 	line-height: 60px;
-	padding-left: 0 16px;
+	padding: 0px;
 }
 
 h1 {
@@ -263,6 +271,10 @@ footer {
 	font-size: 3vw;
 	color: #f5e3c6;
 	text-decoration: none;
+}
+
+.ws, .hp {
+	font-size: 3vw;
 }
 
 .hp a{
@@ -334,9 +346,9 @@ font-size: 3vw;
 }
 
 .steak{
-	padding: 10px;
-	height: 38vh;
-	width: 100%;
+	margin: 5px 10px;
+	height: 40vh;
+	width: 95%;
 	grid-area: steak;
 	position: absolute;
 

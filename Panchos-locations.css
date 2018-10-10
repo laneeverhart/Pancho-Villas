@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-	background-image: url(unsplash-nachos.jpeg);
+	background-image: url(locations-splash.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -20,7 +20,7 @@ body {
 	height: 60px;
 	background-color: rgb(122, 84, 26, 0.5);
 	line-height: 60px;
-	padding-left: 0 16px;
+	padding: 0 90px;
 }
 
 .menu {
@@ -152,11 +152,19 @@ footer {
 	color: #f5e3c6;
 	text-decoration: none;
 }
+.ws {
+	font-size: 2vw;
+	color: #f5e3c6;
+}
 
 .hp a {
 	font-size: 2vw;
 	color: #f5e3c6;
 	text-decoration: none;
+}
+.hp  {
+	font-size: 2vw;
+	color: #f5e3c6;
 }
 
 .hours {
@@ -241,7 +249,7 @@ font-size: 2vw;
 	height: 60px;
 	background-color: rgb(122, 84, 26, 0.0);
 	line-height: 60px;
-	padding-left: 0 16px;
+	padding: 0px;
 }
 
 h1 {
@@ -267,12 +275,19 @@ footer {
     margin: 0;
 }
 
+.ws {
+	font-size: 3vw;
+}
+
 .ws a{
 	font-size: 3vw;
 	color: #f5e3c6;
 	text-decoration: none;
 }
 
+.hp {
+	font-size: 3vw;
+}
 .hp a{
 	font-size: 3vw;
 	color: #f5e3c6;
@@ -334,7 +349,7 @@ font-size: 3vw;
 
 .logo2 {
 	padding: 10px;
-	font-size: 5vw;
+	font-size: 8vw;
 	color: #7a541a;
 	grid-area: logo2;
 	width: 100%;
