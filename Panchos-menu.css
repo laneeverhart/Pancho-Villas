@@ -1,0 +1,314 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding:0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background-image: url(menu.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: lato;
+}
+
+.main-nav {
+	height: 60px;
+	background-color: rgb(122, 84, 26, 0.5);
+	line-height: 60px;
+	padding: 0 90px;
+}
+
+.menu {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li.close {
+	display: none;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 10vw;
+	font-size: 2vw;
+}
+
+.menu li a {
+	 text-decoration: none;
+	 font-weight: bold;
+	 color: #f5e3c6;
+	 cursor: pointer;
+
+}
+
+.mobile-btn {
+	float: right;
+	display: none;
+	height: 60px;
+	width: 60px;
+	background-color: rgb(122, 84, 26, 0.5);
+	background-image: url(hamburger.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	cursor: pointer;
+}
+
+
+h1 {
+	display: block;
+	text-align: center;
+	color: #f5e3c6;
+	margin-top: 10%;
+	font-size: 6.5vw;
+	background-color: rgb(122, 84, 26, 0.5);
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	color: #7a5620;
+	margin-top: 50px;
+}
+
+.price {
+	display:inline-block;
+	float: right;
+	color: #7a5620;
+	font-size: 1em;
+	margin-right: 2%;
+
+
+}
+.item {
+	margin: 1em 2%;
+	color: #7a5620;	
+	font-size: 1.5em;
+
+
+}
+.desc {
+	margin: 1em 2%;
+	color: #7a5620;
+}
+
+hr {
+	/* Gradient transparent - color - transparent */
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.container {
+	background-color: #f5e3c6;
+	color: rgb(122, 84, 26, 0.7);
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10vh;
+}
+
+
+footer {
+	background-color: rgb(122, 84, 26, 0.7);
+	position: relative;
+	height: 200px;
+	margin-top: -200px;
+	clear: both;
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.ws a{
+	font-size: 2vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+.ws {
+	font-size: 2vw;
+	color: #f5e3c6;
+}
+
+.hp a {
+	font-size: 2vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+.hp  {
+	font-size: 2vw;
+	color: #f5e3c6;
+}
+
+.hours {
+font-size: 1.8vw;
+	color: #f5e3c6;	
+}
+
+/*Mobile Starts Here*/
+
+@media (max-width: 768px) {
+	.menu {
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgb(122, 84, 26, 0.7);
+		z-index: 1000;
+		width: 300px;
+		transform: translateX(-300px);
+		transition: all 200ms ease-in-out;	
+
+	}
+
+	.menu.open {
+		transform: translateX(0);
+
+	}
+
+	.menu li {
+		display: block;
+		padding: 14px;
+		justify-content: center;
+
+	}
+
+	.menu li a {
+		color: #f5e3c6;
+		font-size: 6vw;
+	}
+
+	.menu li.close {
+	float: right;
+	display: none;
+	height: 60px;
+	width: 60px;
+	background-image: url(hamburger.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	cursor: pointer;
+	}
+
+
+	.overlay {
+		top: 0;
+		left: 0;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0);
+		opacity: 0;
+		z-index: -1;
+		transform: opacity 100ms linear;
+	}
+
+	.mobile-btn {
+	display: inline-block;
+	cursor: pointer;
+}
+
+	.mobile-btn:hover {
+		opacity: 0.5;
+	}
+
+	.overlay.open{
+		z-index: 1;
+		opacity: 1;
+	}
+
+.main-nav {
+	height: 60px;
+	background-color: rgb(122, 84, 26, 0.0);
+	line-height: 60px;
+	padding: 0px;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	color: #f5e3c6;
+	margin-top: 10%;
+	font-size: 6.5vw;
+	background-color: rgb(122, 84, 26, 0.5);
+	transition: all 1700ms ease-in-out;
+}
+
+footer {
+	background-color: rgb(122, 84, 26, 0.7);
+	position: relative;
+	height: 200px;
+	margin-top: -200px;
+	clear: both;
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
+}
+
+.ws a{
+	font-size: 3vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+
+.ws, .hp {
+	font-size: 3vw;
+}
+
+.hp a{
+	font-size: 3vw;
+	color: #f5e3c6;
+	text-decoration: none;
+}
+
+.hours {
+font-size: 3vw;
+	color: #f5e3c6;	
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	color: #7a5620;
+	margin-top: 50px;
+}
+
+.price {
+	display:inline-block;
+	float: right;
+	color: #7a5620;
+	font-size: 1em;
+	margin-right: 2%;
+
+}
+.item {
+	margin: 1em 2%;
+	color: #7a5620;	
+	font-size: 1.5em;
+
+
+}
+.desc {
+	margin: 1em 2%;
+	color: #7a5620;
+}
+
+hr {
+	/* Gradient transparent - color - transparent */
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
